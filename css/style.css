@@ -1,0 +1,132 @@
+body {
+    background-color: #f2f2f2;
+    color: #c2c2c2;
+    font-family: Arial, sans-serif;
+}
+.search {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.container {
+    padding: 70px 0 40px;
+}
+.footer {
+    height: 150px;
+}
+.search-form {
+    position: relative;
+}
+.search-1,
+.submit {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search-1 {
+    width: 100%;
+    font-size: 100px;
+    font-weight: 500;
+}
+.search-1:focus {
+    color: #ec5a62;
+}
+.submit {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: 5%;
+    cursor: pointer;
+    background: transparent url(../img/magnifier.svg) no-repeat center center;
+}
+.result .column {
+    width: 30%;
+    display: inline-block;
+}
+.result .column:nth-child(2n),
+.result .column:last-child {
+    margin-left: 4%;
+}
+.result .caption {
+    margin: 18px 0;
+    padding: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.result .column > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.result .item {
+    margin: 4px 0;
+    width: 100%;
+    border: 1px solid rgba(118, 117, 128, 0.05);
+    border-radius: 3px;
+}
+.result .link {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(118, 117, 128, 0.05);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #c2c2c2;
+}
+.result .link:link,
+.result .link:visited {
+    color: #c2c2c2;
+}
+.result .link:hover {
+    color: #ec5a62;
+    background-color: rgba(118, 117, 128, 0.1);
+}
+.result .img,
+.result .text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.result .img {
+    width: 50px;
+    height: 50px;
+}
+.result .text {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .search-1 {
+        font-size: 70px;
+    }
+    .submit {
+        width: 70px;
+        height: 70px;
+        top: 7px;
+    }
+    .result .column {
+        width: 50%;
+    }
+    .result .column:nth-child(even) {
+        margin-left: 5%;
+    }
+    .result .column:nth-child(odd) {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .search-1 {
+        font-size: 50px;
+    }
+    .submit {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+    }
+    .result .column,
+    .result .column:nth-child(even),
+    .result .column:last-child {
+        width: 100%;
+        margin-left: 0;
+    }
+}
